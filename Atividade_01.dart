@@ -11,8 +11,8 @@ class Carro extends Veiculo{
 }
 
 class Aviao extends Veiculo{
-  double tamanho;
-  Aviao(String cor, int velocidade, double peso, this.tamanho): super(cor,velocidade,peso);
+  int num_helice;
+  Aviao(String cor, int velocidade, double peso, this.num_helice): super(cor,velocidade,peso);
 }
 
 void main(){
@@ -22,11 +22,11 @@ void main(){
   print(carro1.peso);
   print(carro1.buzina);
   print(' ');
-  Aviao aviao1 = Aviao('Branco',850,90,75);
+  Aviao aviao1 = Aviao('Branco',850,90,4);
   print(aviao1.cor);
   print(aviao1.velocidade);
   print(aviao1.peso);
-  print(aviao1.tamanho);
+  print(aviao1.num_helice);
 }
 
   
